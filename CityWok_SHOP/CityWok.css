@@ -1,0 +1,398 @@
+html {
+    min-height: 100%;
+}
+body{
+    font-family: "Verdana" , Serif;
+    background-image: url(https://www.voglioviverecosi.com/wp-content/uploads/cina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.navbar { 
+    width: 100%;
+    background-color: #393939;
+   
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.navbar a{
+    display: flex;
+    color: #ec7f37;
+    padding: 10px 15px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul{
+    border-color: brown;
+    margin: 10px 10px 10px 0;
+    list-style: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: #000;
+    transition: 0.5s;
+}
+
+.side-nav{
+    height: 100%;
+    width: 60%;
+    max-width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #393939 ;
+    opacity: 0.9;
+    overflow-x: hidden;
+/*    padding-top: 60px;*/
+    transition: 0.5s;
+    margin-top: 4em;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ec7f37;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color: #fff;
+}
+
+side-nav .btn.close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 60px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+     padding-top: 3em;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: #be4f0c;
+    margin-bottom: 0;
+}
+
+.logo {
+    width: 4em;
+    height: auto;
+    margin: 1em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    border-bottom-style: groove;
+    border-bottom-color: #FF5A09;
+    margin-bottom: 3em;
+}
+
+#spaceh1{
+    margin-bottom: 100px;
+}
+
+h2 {
+    color: #be4f0c;
+    
+    font-size: 3em;
+    margin-left: 1rem;
+    margin-bottom: 0.5em;
+}
+
+#spaceh2{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.speiseImg {
+    height: 15em;
+    width: 20em;
+    margin: 1em;
+}
+
+.speisen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    margin: 5px;
+}
+
+.speise{
+    font-family: cursive;
+    text-align: center;
+    color:  #ec7f37 ;
+    background-color: rgba(1,1,1,0.65) ;
+    
+    margin-bottom:  2rem;
+    
+}
+
+.bestellung{
+    color:  #ec7f37;
+/*    margin: 1em;*/
+}
+
+.formular{
+    border: 5px solid #393939;
+    background-color: rgba(1,1,1,0.65);
+}
+
+.adresse{
+	background: rgba(1,1,1,0.65) ;
+	border: 5px solid #393939;
+    margin: 1rem;
+}
+
+.warenkorb{
+ 
+    color:  #ec7f37;
+    margin: 1rem;
+    background-color: rgba(1,1,1,0.65);
+    border: 5px solid #393939
+}
+
+
+.adresse input[type=submit],
+.btn input[type=button],
+.btn input[type=reset],
+.adresse input[type=text],
+.adresse input[type=tel],
+.adresse label
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #ec7f37;
+
+}
+
+.adresse label {
+	display:block;
+	margin-bottom: 10px;
+}
+
+.adresse input[type=text],
+.adresse input[type=tel]
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #393939 ;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+ 
+.adresse input[type=text]:focus,
+.adresse input[type=tel]:focus
+{
+	border-bottom: 1px dashed #ec7f37 ;
+}
+
+.tooltip {
+    visibility: hidden;
+    background: transparent;
+    font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	color: gray;
+    text-align: center;
+    
+    top: -5px;
+    left: 105%;
+}
+
+input:invalid:focus + .tooltip {
+    visibility: visible;
+}
+
+.btn-purchase{
+	background:  #393939;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color:  #ec7f37 ;
+}
+
+.btn-purchase:enabled:hover{
+    background-color: #ddd;
+    color: #000;
+    transition: 0.5s; 
+}
+
+.btn-purchase:disabled {
+    color: grey;
+}
+
+
+.cart-row:last-child {
+    border-bottom: 1px solid #ec7f37;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ec7f37;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #ec7f37;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #ec7f37;
+    background-color: #ec4f39;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #ec7f37;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ec7f37;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #ec7f37;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.radios {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.radios label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:600px){
+    .navbar-nav {display: none;}
+    h3 + .cart-row {
+        display: none;
+    }
+    .cart-row {
+        flex-direction: column;
+        border: 1px solid #393939
+    }
+    .cart-column {
+        margin: 0;
+        margin-left: 0.5em;
+        border: 0;
+    }
+    .radios {
+        flex-direction: column;
+    }
+    .radios label {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .radios span {
+        order: 2;
+        margin-left: 1em;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media(min-width:600px){
+    .open-slide {display: none;}
+    .side-nav {display: none;}
+}
+@media(min-width:800px) {
+    .speisekarte {width: 50%; float: left;}
+    .bestellung {width: 50%; float: right;}
+}
